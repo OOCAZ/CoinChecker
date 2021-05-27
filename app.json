@@ -1,0 +1,12 @@
+{
+  "name": "CoinChecker",
+  "displayName": "CoinChecker",
+  "expo": {
+    "name": "CoinChecker",
+    "slug": "CoinChecker",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
