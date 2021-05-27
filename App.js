@@ -1,3 +1,13 @@
+//Origianl commits by Zac Poorman : OOCAZ
+//5/26/2021 date of origin
+//This is the file that controls the whole app, if you have an idea to make this
+//app better just ask and we will make it better together.
+
+//Please feel free to comment in the code where you made changes so that people get to see you work.
+
+//Also I know its ugly...
+
+
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
