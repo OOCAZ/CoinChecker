@@ -7,7 +7,6 @@
 
 //Also I know its ugly...
 
-
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
@@ -70,7 +69,9 @@ class App extends Component {
         <Text
           color = '#ffffff' 
         ></Text>
-       <Text style={{color: "white"}}>Enter the currency to check in USD and then press the button!</Text>
+       <Text style={{color: "white"}}>First enter the currency to check.</Text>
+       <Text style={{color: "white"}}>Next enter the currency abbreviation desired.</Text>
+       <Text style={{color: "white"}}>Finally press the button!</Text>
       <StatusBar style="auto" />
       <Text
           style={{color: "white"}} 
@@ -149,21 +150,6 @@ class App extends Component {
           placeholder="24 low will appear here"
           style={{color: "white"}}
         > Please note: Type coins and currencies in all lower case! </Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
         <Text
           color = '#ffffff' 
         ></Text>
