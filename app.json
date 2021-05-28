@@ -9,7 +9,8 @@
       "**/*"
     ],
     "android": {
-      "package": "coin.apk"
+      "package": "coin.apk",
+      "android.adaptiveIcon.foregroundImage": "./images/logocool.png"
     }
   }
 }
