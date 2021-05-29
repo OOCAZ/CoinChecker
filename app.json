@@ -11,6 +11,10 @@
     "android": {
       "package": "coin.apk",
       "icon": "./images/logocool3.png"
+    },
+    "ios": {
+      "bundleIdentifier": "coin.apk",
+      "icon": "./images/logohigher.png"
     }
   }
 }
