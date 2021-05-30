@@ -12,3 +12,5 @@ This has been tested by myself ot work on Android and Web. Will conitnue testing
 The UI needs work and I will offer that up to those who want to try to make it nice. 
 
 Will also be adding icons and the like so that we can upload this to the app stores soon.
+
+Website: https://coinchecker.weebly.com/
