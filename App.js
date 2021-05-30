@@ -9,8 +9,9 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
 import axios from 'axios';
+import RNPickerSelect from 'react-native-picker-select';
 
 //URL to call for Doge 
 //https://api.coingecko.com/api/v3/coins/dogecoin
@@ -32,67 +33,39 @@ class App extends Component {
   };
   render(){
   return (
-    <View style={styles.container}>
-      <Text
-          color = '#ffffff' 
-        ></Text>
+    <ScrollView style={styles.container} >
+    
+      
         <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          style={{color: "white"}}
+          style={styles.textTop}
         >Built by PWR4G Studios / Zac Poorman</Text>
         <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          style={{color: "white"}} 
+          style={styles.textUpper} 
         >Lookup the Github to get involved in making this better!</Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-       <Text style={{color: "white"}}>First enter the currency to check.</Text>
-       <Text style={{color: "white"}}>Next enter the currency abbreviation desired.</Text>
-       <Text style={{color: "white"}}>Finally press the button!</Text>
+       
       <StatusBar style="auto" />
       <Text
           style={{color: "white"}} 
         ></Text>
       <TextInput
+        style={styles.textInput}
+        placeholderTextColor="white"
+        mode="outlined"
         autoCapitalize="none"
         placeholder="eg. bitcoin or dogecoin"
-        style={{color: "white"}}
         onChangeText={(coinToChoose) => { this.setState({coinToChoose: coinToChoose})} }
         value={this.state.coinToChoose}
       />
+
       <TextInput
         autoCapitalize="none"
         placeholder="eg. usd of eur"
-        style={{color: "white"}}
+        placeholderTextColor="white"
+        style={styles.textInput}
         onChangeText={(currecyToChoose) => { this.setState({currecyToChoose: currecyToChoose})} }
         value={this.state.currecyToChoose}
       />
-      <Text
-          style={{color: "white"}} 
-        ></Text>
+      <View style={{color: "white", alignSelf:'center', paddingHorizontal: 100}}>
       <Button
         onPress={ () => {
           URL = "https://api.coingecko.com/api/v3/coins/" + this.state.coinToChoose
@@ -122,60 +95,38 @@ class App extends Component {
         });}
         }
         title="Check Price"
-        color="#841584"
+        color="#0B8CFD"
+        
         accessibilityLabel="Press to find the crypto price"/>
-        <Text
-          style={{color: "white"}}
-        ></Text>
+        </View>
         <Text 
           placeholder="price will appear here" 
-          style={{color: "white"}} 
+          style={styles.textLower} 
         >Price Per Coin: {this.state.coinPrice}</Text>
         <Text 
           placeholder="last updated date will appear here"
-          style={{color: "white"}}
+          style={styles.textLower}
         >Last Updated: {this.state.lastUpdate}</Text>
         <Text 
           placeholder="24 high will appear here"
-          style={{color: "white"}} 
+          style={styles.textLower} 
         >24 Hour High: {this.state.high24}</Text>
         <Text 
           placeholder="24 low will appear here"
-          style={{color: "white"}} 
+          style={styles.textLower} 
         >24 Hour Low: {this.state.low24}</Text>
-        <Text
-          style={{color: "white"}} 
-        ></Text>
+        
         <Text 
           placeholder="24 low will appear here"
-          style={{color: "white"}}
+          style={styles.textLower}
         > Please note: Type coins and currencies in all lower case! </Text>
+        
         <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          color = '#ffffff' 
-        ></Text>
-        <Text
-          style={{color: "white"}} 
-        ></Text>
-        <Text
-          style={{color: "white"}} 
-        ></Text>
-        <Text
-         style={{color: "white"}} 
-        ></Text>
-        <Text
-          style={{color: "white"}} 
-        ></Text>
-        <Text
-          style={{color: "white"}} 
+          style={styles.textLower} 
         >Thanks to Coingecko for the free API</Text>
         
-    </View>
+  
+    </ScrollView>
 
   );
 }
@@ -184,11 +135,33 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#4777d7',
-    alignItems: 'center',
-    justifyContent: 'center',
+   
+    backgroundColor: '#27394A',
   },
+  textUpper: {
+   color: "white", 
+   margin:15, 
+   alignSelf: 'center'
+  },
+  textLower: {
+    color: "white", 
+    margin:10, 
+    alignSelf: 'center'
+   },
+   textTop: {
+    color: "white", 
+    margin:50, 
+    alignSelf: 'center'
+   },
+   textInput:{
+    color: "white",  
+    borderWidth: 2, 
+    borderColor: "white", 
+    padding: 10, 
+    marginLeft: 40,
+    marginRight:40,
+    margin:15
+   }
 });
 
 export default App;
