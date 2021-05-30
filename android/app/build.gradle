@@ -134,9 +134,9 @@ android {
     defaultConfig {
         applicationId "com.coinchecker"
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion rootProject.ext.targetSdkVersion //This is where to change the version number for android
+        versionCode 1.1
+        versionName "1.1"
     }
     splits {
         abi {

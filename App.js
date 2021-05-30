@@ -11,7 +11,6 @@ import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
 import axios from 'axios';
-import RNPickerSelect from 'react-native-picker-select';
 
 //URL to call for Doge 
 //https://api.coingecko.com/api/v3/coins/dogecoin
