@@ -10,6 +10,7 @@
     ],
     "android": {
       "package": "coin.apk",
+      "versionCode": 2,
       "icon": "./images/logocool3.png"
     },
     "ios": {
