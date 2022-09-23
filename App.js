@@ -71,8 +71,8 @@ class App extends Component {
           axios.get(URL.toString(), { headers: { accept: "application/json" } })
           .then(response => {
            // If request is good...
-           console.log("successfully got request");
-           console.log(response.data);
+           //console.log("successfully got request");
+           //console.log(response.data);
            var builtPrice = "response.data.market_data.current_price." + this.state.currecyToChoose
            var builtDate = "response.data.last_updated"
            var builthigh24 = "response.data.market_data.high_24h." + this.state.currecyToChoose
@@ -83,10 +83,10 @@ class App extends Component {
            this.setState({ high24 : eval(builthigh24)})
            this.setState({ low24 : eval(builtlow24)})
            //setState({ coinPrice: response.data.market_data.current_price.usd  }) 
-           console.log(this.state.coinPrice)
-           console.log(this.state.lastUpdate)
-           console.log(this.state.high24)
-           console.log(this.state.low24)
+           //console.log(this.state.coinPrice)
+           //console.log(this.state.lastUpdate)
+           //console.log(this.state.high24)
+           //console.log(this.state.low24)
            
         })
        .catch((error) => {
