@@ -9,7 +9,6 @@
   "dependencies": {
     "axios": "^0.27.2",
     "expo": "~41.0.1",
-
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
     "expo-updates": "~0.14.5",
