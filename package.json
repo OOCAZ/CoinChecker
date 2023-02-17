@@ -11,7 +11,7 @@
     "expo": "~41.0.1",
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
-    "expo-updates": "~0.14.5",
+    "expo-updates": "~0.15.6",
     "native-base": "^2.15.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
