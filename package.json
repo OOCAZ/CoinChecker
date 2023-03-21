@@ -10,7 +10,7 @@
     "axios": "^0.27.2",
     "expo": "~41.0.1",
     "expo-splash-screen": "~0.17.5",
-    "expo-status-bar": "~1.4.2",
+    "expo-status-bar": "~1.4.4",
     "expo-updates": "~0.15.6",
     "native-base": "^2.15.2",
     "react": "16.14.0",
